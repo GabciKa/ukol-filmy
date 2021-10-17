@@ -1,0 +1,13 @@
+.hraji {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.infoLine .actor p {
+    margin-left: 0;
+}
+
+.actor p:first-child {
+    font-weight: bold;
+}
+

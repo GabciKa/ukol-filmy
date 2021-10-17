@@ -2,6 +2,8 @@
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: 15px;
+    padding: 10px;
+    border: solid 1px lightgrey;
 }
 
 .movieImg img {
@@ -10,13 +12,18 @@
 }
 
 h2 {
-    color: #eb4648;
+    color: rgb(48, 39, 206);
     margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 .infoLine {
     display: flex;
     align-items: center;
+}
+
+.infoLine:last-child {
+    flex-wrap: wrap;
 }
 
 .infoLine p {
@@ -25,5 +32,10 @@ h2 {
 
 .infoLine h3, .infoLine p {
     margin-top: 0;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
+    width: 100%;
+}
+
+.hraji {
+    gap: 5px;
 }

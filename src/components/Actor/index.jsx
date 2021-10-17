@@ -1,12 +1,13 @@
 import React from 'react';
-import { render } from 'react-dom';
+import "./style.css";
 
 const Actor = ({ name, as }) => {
     return (
         <>
-            <div>
+            <div className="actor">
                 <p>{name}</p>
-                <p>{as}</p>
+                <p>jako</p>
+                <p className="character">{as}</p>
             </div>
         </>
     );

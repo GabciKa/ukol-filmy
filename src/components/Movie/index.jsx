@@ -16,8 +16,11 @@ const Movie = ({ title, poster, year, rating, director, genre, cast}) => {
                 <div className="infoLine"><h3>Hodnocení: </h3><p className="">{rating}</p></div>
                 <div className="infoLine"><h3>Režie: </h3><p className="">{director}</p></div>
                 <div className="infoLine"><h3>Žánr: </h3><p className="">{genre}</p></div>
-                <div className="infoLine hraji"><h3>Hrají: </h3>
-                    {cast.map(herec =>  <Actor name={herec.name}  as={herec.as} key={herec.name + herec.as} />)}
+
+                <div className="infoLine"><h3>Hrají: </h3>
+                    <div className="hraji">
+                        {cast.map(herec =>  <Actor name={herec.name}  as={herec.as} key={herec.name + herec.as} />)}
+                    </div>
                 </div>
             </div>
         </div>
