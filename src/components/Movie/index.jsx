@@ -2,13 +2,11 @@ import React from 'react';
 import Actor from './../Actor';
 import "./style.css";
 
-
-
 const Movie = ({ title, poster, year, rating, director, genre, cast}) => {
     return (
         <div className="movie">
             <div className="movieImg">
-                <img src={"/assets/" + poster}  alt="" />
+                <img /* src={"/assets/" + poster} */ src={`/assets/ ${poster}`} alt="plakát filmu" /> 
             </div>
             <div className="movieInfo">
                 <h2 className="title">{title}</h2>
@@ -25,6 +23,6 @@ const Movie = ({ title, poster, year, rating, director, genre, cast}) => {
             </div>
         </div>
     );
-}
+} 
 
 export default Movie;
